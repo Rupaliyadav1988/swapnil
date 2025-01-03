@@ -1,0 +1,35 @@
+package.json
+
+{
+"name": "coolnodeapp",
+"version": "1.0.0",
+"description": "node app",
+"main": "app.js",
+"scripts": {
+"start": "node app.js"
+},
+"repository": 1
+"type": "git",
+"url": ''
+"author": "'',
+"license": "ISC",
+"bugs": {
+"url": "''
+},
+"homepage": "''
+
+
+Add a file, app.js, and paste the below code. This will be the starting point of our app.
+
+app.js
+
+Const http = require('http');
+const port = process.env.PORT || 3000
+const server = http.createServer (req, res) => 1
+res.statusCode = 200;
+res.setHeader ('Content-Type', 'text/html’);
+res.end('<h1> Hello World</h1>’);
+});
+server.listen(port(), => {
+console.log Server running at port +port);
+});
